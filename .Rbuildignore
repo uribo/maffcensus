@@ -1,0 +1,7 @@
+^maffcensus\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^\.env$
+^Dockerfile$
+^docker-compose\.yaml$
+^\.lintr$
