@@ -10,14 +10,14 @@ read_rcom(path)
 \item{path}{path to shapefile.}
 }
 \value{
-A \link[sf:st_sf]{sf}
+A \link[sf:sf]{sf}
 }
 \description{
 Read agricultural district
 }
 \details{
 Convert Coordinate Reference System EPSG:4612 (JGD2000) to EPSG:6668 (JGD2011).
-To standardize all character variables Unicode NFKC with \link[stringi:stri_trans_nfkc]{stringi::stri_trans_nfkc}.
+To standardize all character variables Unicode NFKC with \link[stringi:stri_trans_nf]{stringi::stri_trans_nfkc}.
 }
 \seealso{
 \url{http://www.maff.go.jp/j/tokei/census/shuraku_data/2015/ma/index.html}
