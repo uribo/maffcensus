@@ -10,7 +10,6 @@ read_rcom <- function(path) {
   d <- sf::st_read(path,
               stringsAsFactors = FALSE,
               as_tibble = TRUE)
-  sf::st_crs(d) <- 6668
   d %>%
     purrr::set_names(tolower(names(d))) %>%
     purrr::modify_if(is.character,
