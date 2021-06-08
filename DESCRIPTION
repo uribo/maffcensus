@@ -11,8 +11,12 @@ Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Imports:
     data.table (>= 1.13.6),
+    dplyr (>= 1.0.6),
+    glue (>= 1.4.2),
     magrittr (>= 1.5),
     purrr (>= 0.3.2),
+    readr (>= 1.4.0),
+    rlang (>= 0.4.11),
     sf (>= 0.6.3),
     stringi (>= 1.4.3),
     stringr (>= 1.4.0),
@@ -27,3 +31,4 @@ URL: https://github.com/uribo/maffcensus
 BugReports: https://github.com/uribo/maffcensus/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Config/testthat/edition: 3

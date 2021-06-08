@@ -2,6 +2,8 @@
 
 export("%>%")
 export(read_census_keieitai)
+export(read_machimura)
 export(read_rcom)
+export(view_machimura)
 import(data.table)
 importFrom(magrittr,"%>%")
