@@ -302,7 +302,9 @@ machimura_filter_yasai <- function(data, city_only = TRUE) {
     data <-
       select_city_only(data)
   }
-  data
+  data %>%
+    dplyr::slice(-c(min(stringr::str_which(data$項目名, "^たまねぎ作付面積$")),
+                    min(stringr::str_which(data$項目名, "^ほうれんそう作付面積$"))))
 }
 
 machimura_filter_kajyu <- function(data, city_only = TRUE) {
